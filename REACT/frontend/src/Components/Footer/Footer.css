@@ -1,0 +1,31 @@
+/* Footer styles */
+.footer {
+  background-color: #92f3c6; /* Match header's background color */
+  color: #039D54; /* White text */
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-link {
+  color: #039D54; /* White text */
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}

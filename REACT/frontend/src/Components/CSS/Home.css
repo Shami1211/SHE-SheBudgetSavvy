@@ -1,0 +1,52 @@
+/* Reset default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Slideshow styles */
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+    height: 300px; /* Set your preferred height */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  /* Introduction section styles */
+  .intro-section {
+    text-align: center;
+    padding: 50px 20px;
+    color: #3EB488; /* Mint Green */
+  }
+  
+  .intro-section h2 {
+    color: rgb(169, 124, 214);
+  }
+  
+  .intro-section p {
+    color: rgb(169, 124, 214);
+  }
+
+  .main-content{
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  
+  .stages-image {
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 60%; /* Ensures the image doesn't exceed its container width */
+    height: auto; /* Maintains the image aspect ratio */
+    padding-top: 30px; /* Adjust the top padding as needed */
+  }

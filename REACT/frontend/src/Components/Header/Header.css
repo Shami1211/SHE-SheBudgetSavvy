@@ -1,0 +1,45 @@
+/* Header styles */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 25px;
+  color: #ffffff; /* White text */
+  background-color: #92f3c6; /* Lavender without transparency */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 50px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add space between the logo and text */
+}
+
+.header-right {
+  display: flex;
+  color: #039D54;
+}
+
+.header-right a {
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff; /* Text color */
+  background-color: #039D54; /* Background color */
+  padding: 8px 16px; /* Adjust padding as needed */
+  border-radius: 4px; /* Add rounded corners */
+  border-radius: 0%;
+}
+
+.home-btn {
+  color: #039D54;
+  font-weight: bold;
+}
