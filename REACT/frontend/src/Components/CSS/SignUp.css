@@ -1,0 +1,36 @@
+/* SignUp.css */
+.signup-box {
+    margin: 100px auto;
+    width: 300px;
+    padding-left: 100px;
+    border: 1px solid rgb(169, 124, 214);
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(169, 124, 214);
+    padding-right: 100px;
+    padding-bottom: 50px;
+  }
+  
+  .signup-box h2 {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(169, 124, 214);
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(128, 74, 182);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
