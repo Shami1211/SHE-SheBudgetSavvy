@@ -16,12 +16,6 @@ const Home = () => {
             <div className="intro-section">
               <h2>Welcome to SheBudgetSavvy</h2>
               <p>Welcome to SheBudgetSavvy...</p>
-              <Link to="/signup">
-                <button className="home-btn">SignUp</button>
-              </Link>
-              <Link to="/signin">
-                <button className="home-btn">SignIn</button>
-              </Link>
             </div>
           </main>
         </div>

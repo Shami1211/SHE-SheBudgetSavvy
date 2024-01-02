@@ -8,7 +8,7 @@ const SignIn = () => {
     <div>
       <Header />
       <div>
-        <h1>Sign In Page</h1>
+       
       </div>
       <Footer />
     </div>
