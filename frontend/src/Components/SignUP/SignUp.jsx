@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import '../CSS/SignUp.css';
+import './SignUp.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -30,6 +31,8 @@ const SignUp = () => {
 
   return (
     <div>
+
+
       <Header />
       <div className="signup-box">
         <form onSubmit={handleSubmit}>
@@ -72,7 +75,14 @@ const SignUp = () => {
           />
           <button type="submit">Sign Up</button>
         </form>
+         
+
       </div>
+      {/* Navigation buttons after the form */}
+      <div className="navigation-buttons">
+          <Link to="/back">Back</Link>
+          <Link to="/">Home</Link>
+        </div>
       <Footer />
     </div>
   );

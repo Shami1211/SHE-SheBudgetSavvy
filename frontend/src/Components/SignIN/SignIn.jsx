@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../CSS/SignIn.css';
+import './SignIn.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
