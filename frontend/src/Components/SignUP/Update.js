@@ -1,20 +1,24 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './SignUp.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { BrowserRouter as Router,Routes} from 'react-router-dom';
 import axios from 'axios';
 
-const SignUp = () => {
+const Update = () => {
 
   let navigate=useNavigate()
+
+  const { id } = useParams();
+
 
   const [user, setUser] = useState({
     name: '',
     username: '',
     email: '',
   });
+  
 
   //Age
 /*
@@ -35,11 +39,15 @@ const SignUp = () => {
 
   }
 
+  useEffect(() =>{
+    loadUsers()
+  }, []  );
+
   const onSubmit = async (e) => {
     e.preventDefault(); // Fix the typo here
   
     try {
-      await axios.post("http://localhost:8080/user", user);
+        await axios.put(`http://localhost:8080/user/${id}`, user);
       navigate("/profile");
     } catch (error) {
       console.error("Error submitting data:", error);
@@ -47,12 +55,23 @@ const SignUp = () => {
     }
   }
 
+  const loadUsers = async () => {
+    try {
+      const result = await axios.get(`http://localhost:8080/user/${id}`);
+      console.log("User Data:", result.data);
+      setUser(result.data);
+    } catch (error) {
+      console.error("Error loading user data:", error);
+    }
+  };
+  
+  
   return (
     <div>
       <Header />
       <div className="signup-box">
         <form onSubmit={(e)=>onSubmit(e)}>
-          <h2>Sign Up</h2>
+          <h2>Update User Details</h2>
           <input
             type="text"
             placeholder="Full Name"
@@ -80,7 +99,6 @@ const SignUp = () => {
       </div>
       {/* Navigation buttons after the form */}
       <div className="navigation-buttons">
-      <Link to="/profile">View all</Link>
         <Link to="/back">Back</Link>
         <Link to="/">Home</Link>
       </div>
@@ -89,4 +107,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Update;

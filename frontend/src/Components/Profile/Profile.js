@@ -32,6 +32,7 @@ const Profile = () => {
               <th>Name</th>
               <th>Username</th>
               <th>Email</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -44,7 +45,19 @@ const Profile = () => {
               <td>{user.name}</td>
               <td>{user.username}</td>
               <td>{user.email}</td>
-              
+              <td>
+
+
+              <Link 
+
+              to={`/updateuser/${user.id}`}
+
+              >Update</Link> <br></br><br></br>
+
+
+             <button >Delete</button><br></br><br></br>
+              <Link to={`/view/${user.id}`}>View</Link>
+              </td>
              
             </tr>
                 ))

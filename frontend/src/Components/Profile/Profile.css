@@ -7,8 +7,8 @@
     border-radius: 5px;
     text-align: center;
     color: rgb(169, 124, 214);
-    padding-right: 100px;
-    padding-bottom: 50px;
+    padding-right: 200px;
+    padding-bottom: 100px;
   }
   
   .profile-box h2 {
@@ -53,3 +53,36 @@
     background-color: rgb(94, 53, 128);
   }
   
+  /* Add these styles to your Profile.css file */
+
+/* Style for the buttons in the Action column */
+td button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  background-color: rgb(128, 74, 182);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+td button:hover {
+  background-color: rgb(94, 53, 128);
+}
+
+/* Style for the "View" link */
+td a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 8px 12px;
+  background-color: rgb(128, 74, 182);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+td a:hover {
+  background-color: rgb(94, 53, 128);
+}
