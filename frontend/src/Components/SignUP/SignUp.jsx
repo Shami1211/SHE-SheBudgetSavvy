@@ -6,11 +6,9 @@ import { Link } from 'react-router-dom';
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
-    nickName: '',
-    age: '',
+    name: '',
     username: '',
-    password: '',
+    email: '',
   });
 
   const handleChange = (e) => {
@@ -40,25 +38,11 @@ const SignUp = () => {
           <input
             type="text"
             placeholder="Full Name"
-            name="fullName"
-            value={formData.fullName}
+            name="name"
+            value={formData.name}
             onChange={handleChange}
           />
-          <input
-            type="text"
-            placeholder="Nickname"
-            name="nickName"
-            value={formData.nickName}
-            onChange={handleChange}
-          />
-            <input
-            type="number"
-            placeholder="Age (in years)"
-            name="age"
-            value={formData.age}
-            onChange={handleChange}
-            required
-          />
+          
           <input
             type="text"
             placeholder="Username"
@@ -67,13 +51,13 @@ const SignUp = () => {
             onChange={handleChange}
           />
           <input
-            type="password"
-            placeholder="Password"
-            name="password"
-            value={formData.password}
+            type="email"
+            placeholder="Email"
+            name="email"
+            value={formData.email}
             onChange={handleChange}
           />
-          <button type="submit">Sign Up</button>
+          <button type="submit" >< Link to="/profile">Sign Up</Link></button>
         </form>
          
 
